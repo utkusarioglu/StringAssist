@@ -32,7 +32,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="webpack.config.js" />
-    <None Include="index.d.ts" />
     <Content Include="tsconfig.json" />
     <Content Include="package.json" />
     <Content Include="README.md" />
@@ -41,6 +40,7 @@
     <Folder Include="src\" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="index.d.ts" />
     <TypeScriptCompile Include="src\c_string-assist.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
