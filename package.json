@@ -1,0 +1,36 @@
+{
+  "name": "@utkusarioglu/string-assist",
+  "version": "0.0.1",
+  "description": "Extends JS built-in string prototype with some handy functionality",
+  "main": "index.js",
+  "author": {
+    "name": "Utku Sarioglu",
+    "email": "utkusarioglu@gmail.com",
+    "url": "http://www.utkusarioglu.com"
+  },
+  "scripts": {
+    "build": "webpack",
+    "clean": "tsc --build --clean"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.14",
+    "babel-jest": "23.0.0",
+    "jest": "23.0.0",
+    "shx": "^0.3.2",
+    "ts-jest": "24.1.0",
+    "ts-loader": "6.2.1",
+    "typescript": "^3.2.2",
+    "typescript-declaration-webpack-plugin": "0.1.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utkusarioglu/StringAssist.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/utkusarioglu/StringAssist/issues"
+  },
+  "homepage": "https://github.com/utkusarioglu/StringAssist#readme"
+}
