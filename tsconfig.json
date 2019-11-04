@@ -7,7 +7,7 @@
     "noImplicitAny": true,
     "noEmitOnError": false,
     "removeComments": true,
-    "target": "es5",
+    "target": "es6",
     "strict": true,
     "lib": [ "es2015", "dom" ],
     "sourceMap": true, /* Generates corresponding '.map' file. */
@@ -15,7 +15,8 @@
     "declarationMap": false /* Generates a sourcemap for each corresponding '.d.ts' file. */
   },
   "include": [
-    "./src/string-assist.ts"
+    "src/string-assist.ts",
+    "src/string-assist.test.ts"
   ],
   "exclude": [
     "node_modules"

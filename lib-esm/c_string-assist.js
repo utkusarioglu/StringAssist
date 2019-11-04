@@ -1,2 +1,2 @@
-export var C_StringAssist = {};
+export const C_StringAssist = {};
 //# sourceMappingURL=c_string-assist.js.map
