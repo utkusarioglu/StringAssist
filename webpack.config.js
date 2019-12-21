@@ -3,7 +3,7 @@ var webpack = require("webpack");
 
 module.exports = {
     entry: {
-        'index': './src/string-assist.ts'
+        'index': './src/index.ts'
     },
     mode: "production",
     output: {

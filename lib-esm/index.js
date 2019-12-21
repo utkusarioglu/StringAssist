@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 String.prototype.toProperCase = function () {
     return this.replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
 };
@@ -15,4 +13,4 @@ String.prototype.subs = function (...substitutions) {
         return prev.replace(`%${index}`, current);
     }, this);
 };
-//# sourceMappingURL=string-assist.js.map
+//# sourceMappingURL=index.js.map

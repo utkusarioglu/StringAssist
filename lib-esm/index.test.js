@@ -1,6 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-require("./string-assist");
+import "./index";
 test("toProperCase", () => {
     const test_string = "this is all lower case";
     const result = test_string.toProperCase();
@@ -27,4 +25,4 @@ test("subs", () => {
     const result = test_string.subs("life", "is", "good");
     expect(result).toStrictEqual("life is good");
 });
-//# sourceMappingURL=string-assist.test.js.map
+//# sourceMappingURL=index.test.js.map

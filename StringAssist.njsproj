@@ -42,15 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="index.d.ts" />
-    <TypeScriptCompile Include="src\c_string-assist.ts">
+    <TypeScriptCompile Include="src\c_index.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
-    <TypeScriptCompile Include="src\string-assist.test.ts">
-      <SubType>Code</SubType>
-    </TypeScriptCompile>
-    <TypeScriptCompile Include="src\string-assist.ts">
-      <SubType>Code</SubType>
-    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\index.test.ts" />
+    <TypeScriptCompile Include="src\index.ts" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>
