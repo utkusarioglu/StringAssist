@@ -1,6 +1,6 @@
 {
   "name": "@utkusarioglu/string-assist",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Extends JS built-in string prototype with some handy functionality",
   "main": "index.js",
   "author": {
@@ -10,21 +10,22 @@
   },
   "scripts": {
     "clean": "shx rm -rf _bundles lib lib-esm index.d.ts package-lock.json",
-    "declaration": "dts-bundle --name @utkusarioglu/string-assist --main lib/string-assist.d.ts --out ../index.d.ts",
+    "declaration": "dts-bundle --name @utkusarioglu/string-assist --main lib/index.d.ts --out ../index.d.ts",
     "build": "npm run clean && tsc && tsc -m es6 --outDir lib-esm && webpack && npm run declaration",
-    "test": "jest"
+    "test": "jest",
+    "build-publish": "npm version patch --force && npm run build && npm publish"
   },
   "devDependencies": {
-    "typescript": "^3.6.4",
-    "jest": "24.9.0",
-    "ts-jest": "24.1.0",
-    "shx": "^0.3.2",
-    "ts-loader": "6.2.1",
-    "dts-bundle": "0.7.3",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10",
+    "@types/jest": "24.0.21",
     "@types/node": "^8.0.14",
-    "@types/jest": "24.0.21"
+    "dts-bundle": "0.7.3",
+    "jest": "24.9.0",
+    "shx": "^0.3.2",
+    "ts-jest": "24.1.0",
+    "ts-loader": "6.2.1",
+    "typescript": "^3.6.4",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   },
   "repository": {
     "type": "git",
